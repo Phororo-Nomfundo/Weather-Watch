@@ -3,7 +3,7 @@
 // GET THE CURRENT CONDITIONS
 const weatherConditions = new XMLHttpRequest();
 
-weatherConditions.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=2195,za&appid=9522769a12b77a45bd0d9d54fb29f212&units=metric', true);
+weatherConditions.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=1285,za&appid=d45cc60052dfba9c999e534fc0482140&units=metric', true);
 weatherConditions.responseType = 'text';
 weatherConditions.send(null);
 
@@ -20,7 +20,7 @@ weatherConditions.onload = function() {
 const weatherForecast = new XMLHttpRequest();
 
 // GET THE FORECAST
-weatherForecast.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?zip=2195,za&appid=9522769a12b77a45bd0d9d54fb29f212&units=metric', true);
+weatherForecast.open('GET', 'http://api.openweathermap.org/data/2.5/forecast?zip=1285,za&appid=d45cc60052dfba9c999e534fc0482140&units=metric', true);
 weatherForecast.responseType = 'text'; 
 weatherForecast.send();
 
